@@ -55,15 +55,14 @@ const plugins = [
 
   // CUSTOM
 
-    // {
-  //   resolve: `medusa-plugin-sendgrid`,
-  //   options: {
-  //     api_key: process.env.SENDGRID_API_KEY,
-  //     from: "denisfelstguinea@gmail.com",
-  //     order_placed_template: 
-  //       process.env.SENDGRID_TEMPLATE_KEY
-  //   }
-  // },
+    {
+    resolve: `medusa-plugin-sendgrid`,
+    options: {
+      api_key: process.env.SENDGRID_API_KEY,
+      from: "info@silice.glass",
+      order_placed_template: process.env.SENDGRID_TEMPLATE_KEY
+    }
+  },
   {
     resolve: "medusa-payment-stripe",
     options: {
