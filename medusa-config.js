@@ -60,7 +60,11 @@ const plugins = [
     options: {
       api_key: process.env.SENDGRID_API_KEY,
       from: "info@silice.glass",
-      order_placed_template: process.env.SENDGRID_TEMPLATE_KEY
+      order_placed_template: process.env.SENDGRID_ORDER_PLACED_TEMPLATE_KEY,
+      // order_fulfillment_template: process.env.SENDGRID_ORDER_SHIPPED_TEMPLATE_KEY,
+      order_shipment_created: process.env.SENDGRID_ORDER_SHIPPED_TEMPLATE_KEY,
+      order_canceled_template: process.env.SENDGRID_ORDER_CANCELED_TEMPLATE_KEY,
+      // customer_password_reset_template: process.env.SENDGRID_PASSWORD_RESET_CUSTOMER_TEMPLATE_KEY,
     }
   },
   {
