@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "clean": "cross-env ./node_modules/.bin/rimraf dist",
-    "build": "cross-env npm run clean && npx medusa user --email test@silice.glass --password 1234 && npm run build:server && npm run build:admin",
+    "build": "cross-env npm run clean && npm run build:server && npm run build:admin",
     "build:server": "cross-env npm run clean && tsc -p tsconfig.server.json",
     "build:admin": "medusa-admin build --deployment",
     "watch": "cross-env tsc --watch",
