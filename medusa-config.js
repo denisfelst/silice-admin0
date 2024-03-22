@@ -40,6 +40,10 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
+      backend_url:
+        process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL.includes('localhost') 
+        ? 'http://localhost:9000' 
+        : process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL
     },
   },
   {
@@ -54,8 +58,7 @@ const plugins = [
   },
 
   // CUSTOM
-
-    {
+  {
     resolve: `medusa-plugin-sendgrid`,
     options: {
       api_key: process.env.SENDGRID_API_KEY,
