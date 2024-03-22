@@ -42,7 +42,7 @@ const plugins = [
       upload_dir: "uploads",
       backend_url:
         process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL.includes('localhost') 
-        ? 'http://localhost:9000' 
+        ? 'http://localhost:9000'
         : process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL
     },
   },
@@ -56,7 +56,6 @@ const plugins = [
       },
     },
   },
-
   // CUSTOM
   {
     resolve: `medusa-plugin-sendgrid`,
