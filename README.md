@@ -73,6 +73,8 @@ Join our [Discord server](https://discord.com/invite/medusajs) to meet other com
 ## npm run build, npm run seed, check DB has started and name is correct. check seed.json
 run admin panel: npx medusa develop -> else -> npx medusa user -e [email] -p [password]
 
+-> Remember to npm run build if .env has changed 
+
 ## install / start redis 
 Download Ubuntu for windows... run on console: 
 sudo service redis-server restart
